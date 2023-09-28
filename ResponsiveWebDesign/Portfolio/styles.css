@@ -1,31 +1,98 @@
+/* entire page */
 @media only screen and (max-width: 600px) {
     body {
         background-color: lightblue;
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.4
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* start of visual page */
+
+/* navbar */
+
 #navbar {
-display: flex;
-align-items: center;
-position: fixed;
-top: 0;
-left: -1px;
-background-color: white;
-width: 100vw;
-border: 1px solid black;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: lightgray;
+    width: 100vw;
+    border: 1px solid black;
+    justify-content: space-between;
+    z-index: 1;
 }
 
-#navbar h1 {
-
+#navbarlinks {
+    padding-right: 10px;
+    justify-content: space-evenly;
 }
 
-#navbar a {
-align-items: right;
-}
-
-#welcome-section {
-padding-top: 50px;
-height: 100%;
-}
+/* Home section */
   
-  
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+
+/* About section */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+#aboutimg1 {
+    width: 250px;
+}
+
+#aboutimg2 {
+    width: 250px;
+}
+
+#aboutimg3 {
+    width: 250px;
+}
+
+/* Work section */
+
+#work {
+    height: 100vh;
+}
+
+/* Contact section */
+
+#contact {
+    height: 100vh;
+}
