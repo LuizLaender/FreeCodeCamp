@@ -1,0 +1,1 @@
+during development of the portfolio, i created a package.json to monitor changes i make in real-time on my browser.
