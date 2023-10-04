@@ -1,15 +1,21 @@
-/* entire page */
-:root {
-    --red: #cd5c5c;
-    --blue: #5ccdcd;
-    --green: #94cd5c;
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/assets/fonts/Montserrat.ttf);
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: var(--blue);
-    }
+@font-face {
+    font-family: 'Roboto';
+    src: url(/assets/fonts/Roboto.ttf);
 }
+
+:root {
+    --primary:  #0078D4 ;
+    --secondary: #FF6F61;
+    --background:  #F4F4F4;
+    --text: #333333;
+    --accent: #3498DB;
+    --hover: #FFD600;
+} 
 
 * {
     margin: 0;
@@ -22,9 +28,11 @@ html {
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 1.8rem;
+    font-family: Montserrat;
+    font-size: 2rem;
     line-height: 1.4;
+    background: linear-gradient(75deg, var(--primary), var(--background));
+    color: var(--text);
 }
 
 body::-webkit-scrollbar {
@@ -33,7 +41,20 @@ body::-webkit-scrollbar {
 
 a {
     text-decoration: none;
-    color: white;
+    color:  var(--secondary);
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+hr {
+    display: flex;
+    margin-left: 10vw;
+    height: 1px;
+    width: 80vw;
+    background-color: var(--text);
+    border: 0;
 }
 
 /* start of visual page */
@@ -47,7 +68,7 @@ a {
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: var(--red);
+    background: linear-gradient(to right, #35495E 50%, var(--primary));
     z-index: 1;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
@@ -69,15 +90,48 @@ a {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: var(--blue);
 }
 
-#home h1 {
-    color: white;
+#home {
+    color: var(--text);
 }
 
-#home p {
-    color: var(--red);
+/* Work section */
+
+#work {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+#projectgrid a {
+    height: 204px;
+    background-color: var(--secondary);
+    transition: transform 0.3s ease;
+}
+
+#projectgrid a:hover {
+    height: 204px;
+    background-color: var(--hover);
+    transform: translateY(0.4rem);
+
+}
+
+#work a img {
+    width: 30rem;
+}
+
+#work h3 {
+    position: absolute;
+    margin-top: 40rem;
 }
 
 /* About section */
@@ -88,84 +142,67 @@ a {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: var(--red);
+    font-family: Roboto;
 }
 
-#about1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#aboutimg1 {
-    width: 18rem;
+#aboutimg1, #aboutimg2, #aboutimg3 {
+    width: 12rem;
     margin-left: 3rem;
-    border: 5px solid black;
+    border: 1px solid black;
     border-radius: 10px;
 }
-#abouttxt1 {
+
+#abouttxt1, #abouttxt2, #abouttxt3 {
     margin: 3rem;
     width: 50rem;
-    background-color: var(--blue);
+    background-color: var(--accent);
     padding: 1.5rem;
     border-radius: 10px;
 }
 
-#about2 {
+#about1, #about2, #about3 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#aboutimg2 {
-    width: 20rem;
-    margin-right: 3rem;
-    border: 5px solid black;
-    border-radius: 10px;
-}
-#abouttxt2 {
-    margin: 3rem;
-    width: 50rem;
-    background-color: var(--blue);
-    padding: 1.5rem;
-    border-radius: 10px;
-}
-
-#about3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#aboutimg3 {
-    width: 15rem;
-    margin-left: 3rem;
-    border: 5px solid black;
-    border-radius: 10px;
-}
-#abouttxt3 {
-    margin: 0 0 0 3rem;
-    width: 50rem;
-    background-color: var(--blue);
-    padding: 1.5rem;
-    border-radius: 10px;
-}
-
-/* Work section */
-
-#work {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: var(--blue);
-}
-
-#work a img {
-    width: 30rem;
 }
 
 /* Contact section */
 
 #contact {
     height: 100vh;
-    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h1 {
+    position: absolute;
+}
+
+#contactlinks {
+    margin-top: 11rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 45rem;
+    font-size: 2rem;
+}
+
+#contactlinks a {
+    transition: transform 0.3s ease;
+}
+
+#contactlinks a:hover {
+    transform: translateY(0.4rem);
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.6rem;
+    background:  var(--accent);
+    border-top: 2px solid var(--text);
+    font-size: 1.1rem;
+    color:  var(--text);
 }
