@@ -68,7 +68,7 @@ hr {
     top: 0;
     left: 0;
     width: 100vw;
-    background: linear-gradient(to right, #35495E 50%, var(--primary));
+    background: linear-gradient(to right, var(--primary) 50%, var(--accent));
     z-index: 1;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 }
@@ -79,6 +79,7 @@ hr {
     display: flex;
     justify-content: space-evenly;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 /* Home section */
@@ -105,33 +106,35 @@ hr {
     align-items: center;
 }
 
-#projectgrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5rem;
-}
-
-#projectgrid a {
-    height: 204px;
-    background-color: var(--secondary);
-    transition: transform 0.3s ease;
-}
-
-#projectgrid a:hover {
-    height: 204px;
-    background-color: var(--hover);
-    transform: translateY(0.4rem);
-
-}
-
 #work a img {
-    width: 30rem;
+    width: 18rem;
+    margin: 0.5rem 1rem;
+}
+
+#work h1 {
+    position: absolute;
+    margin-bottom: 45rem;
 }
 
 #work h3 {
     position: absolute;
-    margin-top: 40rem;
+    margin-top: 50rem;
+}
+
+#projectgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#projectgrid img {
+    border-bottom: 10px solid var(--secondary);
+    transition: transform 0.3s ease;
+    pointer-events: auto;
+}
+
+#projectgrid img:hover {
+    border-bottom: 10px solid var(--hover);
+    transform: translateY(0.4rem);
 }
 
 /* About section */
@@ -143,27 +146,25 @@ hr {
     flex-direction: column;
     height: 100vh;
     font-family: Roboto;
-}
-
-#aboutimg1, #aboutimg2, #aboutimg3 {
-    width: 12rem;
-    margin-left: 3rem;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-#abouttxt1, #abouttxt2, #abouttxt3 {
-    margin: 3rem;
-    width: 50rem;
-    background-color: var(--accent);
-    padding: 1.5rem;
-    border-radius: 10px;
+    font-size: 1.4rem;
 }
 
 #about1, #about2, #about3 {
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+#abouttxt1, #abouttxt2, #abouttxt3 {
+    margin: 2rem;
+    width: 50rem;
+    background: linear-gradient(45deg, var(--background), var(--accent) 64%);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+#aboutimg1, #aboutimg2, #aboutimg3 {
+    width: 15rem;
+    border-radius: 15px;
 }
 
 /* Contact section */
@@ -201,7 +202,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 0.6rem;
-    background:  var(--accent);
+    background:  linear-gradient(to right, var(--primary) 50%, var(--accent));
     border-top: 2px solid var(--text);
     font-size: 1.1rem;
     color:  var(--text);
