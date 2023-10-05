@@ -11,6 +11,7 @@
 :root {
     --primary:  #0078D4 ;
     --secondary: #FF6F61;
+    --darksecondary: #E74C3C;
     --background:  #F4F4F4;
     --text: #333333;
     --accent: #3498DB;
@@ -74,7 +75,7 @@ hr {
 }
 
 #navbarlinks {
-    width: 25rem;
+    width: 35rem;
     margin: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -97,7 +98,7 @@ hr {
     color: var(--text);
 }
 
-/* Work section */
+/* Work */
 
 #work {
     height: 100vh;
@@ -137,7 +138,44 @@ hr {
     transform: translateY(0.4rem);
 }
 
-/* About section */
+/* Certificates */
+
+#certificates {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#certificates a img {
+    width: 40rem;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#certificates h1 {
+    position: absolute;
+    margin-bottom: 36rem;
+}
+
+#certificates p {
+    position: absolute;
+    left: 80rem;
+    bottom: -114rem;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+#certificates a {
+    color: var(--darksecondary);
+}
+
+#certificates a:hover {
+    color: var(--hover);
+}
+
+/* About */
 
 #about {
     display: flex;
@@ -167,7 +205,7 @@ hr {
     border-radius: 15px;
 }
 
-/* Contact section */
+/* Contact */
 
 #contact {
     height: 100vh;
