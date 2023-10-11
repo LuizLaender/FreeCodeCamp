@@ -10,4 +10,5 @@
 <img height='80px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png'/></li>
 
 [certificate.pdf](https://github.com/LuizLaender/FreeCodeCamp/files/12874463/certificate.pdf)
-![Certificate](https://github.com/LuizLaender/FreeCodeCamp/assets/79274198/afc8766a-5843-40db-86ab-96a00506c62e)
+
+![Certificate](https://github.com/LuizLaender/FreeCodeCamp/assets/79274198/d06b580c-a272-42de-a931-1e42bbac6be4)
