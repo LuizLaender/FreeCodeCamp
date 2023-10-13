@@ -6,8 +6,8 @@
 
 ### Built With
 
-<img height='80px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png'/></li>
-<img height='80px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png'/></li>
+<a href='https://en.wikipedia.org/wiki/HTML' rel='html_programming_language' ><img height='80px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png'/></a>
+<a href='https://en.wikipedia.org/wiki/CSS' rel='css_programming_language' ><img height='80px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png'/></a>
 
 [certificate.pdf](https://github.com/LuizLaender/FreeCodeCamp/files/12874463/certificate.pdf)
 
